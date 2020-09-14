@@ -11,7 +11,7 @@ import kr.mem.pojo.MemberListController;
 import kr.mem.pojo.MemberUpdateController;
 
 public class HandlerMapping {
-	// HashMAp -> µ¥ÀÌÅÍ¸¦ key¿Í value·Î ³ÖÀ» ¼ö ÀÖÀ½
+	// HashMAp -> ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ keyï¿½ï¿½ valueï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	private HashMap<String, Controller> mappings;
 	public HandlerMapping() {
 		mappings = new HashMap<String, Controller>();
@@ -20,7 +20,7 @@ public class HandlerMapping {
 
 	
 	private void initMap() {
-		
+		//ë­ê°€ë¬¸ì œì„¸ìš” ìº¡í‹´ ì•„ ê¸°ë‹¤ë ¤ë°” ã…‡ã…‹ìš”
 		try {
 		mappings.put("/list.do", new MemberListController());
 		mappings.put("/insert.do", new MemberInsertController());
